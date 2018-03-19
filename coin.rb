@@ -1,6 +1,13 @@
 require 'sinatra'
 require 'colorize'
+require_relative 'block_chain'
+require_relative 'client'
+require_relative 'helpers'
+
 configure { set :server, :puma }
+
+PORT, PEER_PORT = ARGV.first(2)
+set :port, PORT
 
 BALANCES = {
   'silo' => 1_000_000,
