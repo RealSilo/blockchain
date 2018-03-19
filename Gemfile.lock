@@ -2,11 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorize (0.8.1)
+    digest (0.0.1)
     faraday (0.14.0)
       multipart-post (>= 1.2, < 3)
     multipart-post (2.0.0)
     mustermann (1.0.1)
-    puma (3.11.2)
+    openssl (2.1.0)
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
@@ -21,10 +22,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  colorize (~> 0.8.1)
-  faraday (~> 0.14.0)
-  puma (~> 3.11, >= 3.11.2)
-  sinatra (~> 2.0)
+  colorize
+  digest
+  faraday
+  openssl
+  sinatra
 
 BUNDLED WITH
    1.16.1
